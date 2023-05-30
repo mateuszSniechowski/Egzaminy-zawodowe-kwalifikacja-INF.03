@@ -1,0 +1,89 @@
+<html lang="pl">
+<head>
+
+	<meta charset="UTF-8">
+	<link href="styl.css" rel="stylesheet">
+	<title>Kochamy kawę</title>
+	
+	<script>
+		function Cena() {
+			var nrKawy = parseInt(document.getElementById("nrKawy").value);
+			var ilosc = parseInt(document.getElementById("ilosc").value);
+			
+			var cena; 
+			if(nrKawy === 1){
+				cena = 5 * ilosc;
+			} else if(nrKawy === 2){
+				cena = 7 * ilosc;
+			} else if(nrKawy === 4){
+				cena = 6 * ilosc;
+			} else {
+				cena = 0;
+			}
+			
+			var wynik = "Koszt zamówienia wynosi: " + cena + " zł";
+			document.getElementById("wynik").innerHTML = wynik;
+		}
+	</script>
+	
+	
+</head>
+<body>
+	
+	<div class="blok-gorny">
+	
+		<div class="menu">
+			<a href="/index.html">Strona główna</a>
+			<a href="/zamówienia.html">Zamówienia</a>
+			<a href="/blog.html">Blog</a>
+			<a href="http://gatunki-kawy.pl/">Gatunki kawy</a>
+		</div>
+		
+		<div class="logo">
+			<img src="/Obrazy/logo.png" alt="Kawa">
+		</div>
+		
+	</div>
+	
+	<div class="baner">
+		<h1>Sklep z kawą</h1>
+	</div>
+	
+	<div class="blok-dolny"> 
+	
+		<div class="blok-lewy">
+		
+		
+		
+			<label>Podaj numer kawy: </label>
+			<input id="nrKawy" type="number"><br>
+			
+			<label>Podaj wagę w dekagramach: </label>
+			<input id="ilosc" type="number"><br>
+			
+			<button value="Zamów" onClick=Cena()>Zamów</button>
+			
+			<p id="wynik"></p>
+			
+		
+		</div>
+		
+		<div class="blok-prawy">
+			<h3>Oferta</h3>
+			
+			<ul>
+				<li>Arabica</li>
+				<li>Robusta</li>
+				<li><s>bezkofeinowa</s></li>
+				<li>zielona</li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	<footer>
+		<p>Stronę przygotował: 000000000</p>
+	</footer>
+	
+</body>
+</html>

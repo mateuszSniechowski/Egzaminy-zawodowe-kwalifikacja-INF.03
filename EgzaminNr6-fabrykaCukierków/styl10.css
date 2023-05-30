@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Helvetica;
+}
+
+.blokiGorne{
+    background-color: RGB(146, 184, 112);
+    text-align: center;
+    height: 170px;
+    display: flex;
+}
+
+.blokGorny1{
+    width: 50%;
+}
+
+.blokGorny2{
+    width: 50%;
+}
+
+.image1{
+    background-image: url("./zdjęcia/cukierki1.png");
+    padding-right: 30px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.image1 > a{
+    text-decoration: none;
+}
+
+.baner{
+    background-color: RGB(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+
+footer{
+    background-color: RGB(100, 61, 49);
+    color: white;
+    text-align: center;
+    height: 80px;
+    padding: 5px;
+}
+
+.blokiGlowne{
+    background-color: RGB(146, 184, 112);
+    height: 450px;
+}
+
+.blokGlownyLewy{
+    width: 50%;
+    float: left;
+}
+
+.blokGlownyPrawy{
+    width: 50%;
+    float: left;
+}
+
+table{
+    border: 2px dashed green;
+    margin: 30px;
+    padding: 20px;
+    border-collapse: separate;
+
+}
+
+table, tr, td{
+    border: 2px dashed green;
+    margin: 30px;
+    padding: 20px;
+}
+
+h1{
+    letter-spacing: 20px;
+    font-size: 250%;
+}

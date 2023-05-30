@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link href="./styl.css" rel="stylesheet">
+    <title>cena</title>
+</head>
+<body>
+    <div class="baner">
+        <h1>
+            <a href="index.html">Koszty farby</a>
+        </h1>
+    </div>
+    
+    <div class="panelLewy">
+        <h3>Mieszamy czy wyceniamy?</h3>
+        <p class="paragraf2">
+            <a href="mieszamy.html">Mieszamy</a><br>
+            <a href="cena.html">Wyceniamy</a>
+        </p>
+    </div>
+
+    <div class="panelPrawy">
+    <h3>Obliczanie na podstawie powierzchni zapotrzebowania na farbę</h3>
+        <div class="kalkulator">
+
+            <script>
+                function noRedirect(){
+                    var form = document.querySelector("form");
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("POST", cena.php, true);
+                    xhr.onreadystatechange = function(){
+                        if(xhr.readyState === XMLHttpRequest.Done && xhr.status === 200){
+                            document.getElementById('result').innerHTML = xhr.responseText;
+                        }
+                    };
+                    xhr.send(new FormData(form));
+                }
+            </script>
+
+        <form action="cena.php" method="POST">  
+            <span>Podaj powierzchnię:</span>
+            <input id="pow" name="pow" type="number"> <br>
+            <input style="margin: 20px;" id="submit" type="submit" value="Policz">
+        </form>
+        <!-- <div id='result'></div> -->
+
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer">
+            MALARZ<br>
+            Stronę opracował: 000000000000
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+	margin: 0;
+	border: 0;
+	font-family: "Garamond";
+}
+
+.blok-gorny{
+	display: flex;
+}
+
+.logo{
+	background-color: Olive;
+	width: 25%;
+	height: 110px;
+}
+
+.menu{
+	background-color: Olive;
+	width: 75%;
+	height: 110px;
+}
+
+.baner, footer {
+	background-color: SaddleBrown;
+	color: white;
+	text-align: center;
+	padding: 30px;
+}
+
+.blok-dolny{
+	display: flex;
+}
+
+.blok-prawy, .blok-lewy{
+	background-color: Wheat;
+	width: 50%;
+	height: 450px;
+	font-size: 150%;
+}
+
+.blok-lewy{
+	text-align: center;
+}
+
+h1{
+	letter-spacing: 12px;
+}
+
+a{
+	color: LightGrey;
+	margin: 30px;
+	font-size: 150%;
+	text-decoration: none;
+	line-height: 110px;
+}
+
+a:hover{
+	color: white;
+	border-bottom: 1px solid white;
+}

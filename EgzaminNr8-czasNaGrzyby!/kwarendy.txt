@@ -1,0 +1,27 @@
+Zapytanie 1: wybierające jedynie pola id, nazwa oraz potoczna z tabeli grzyby jedynie dla grzybów
+jadalnych
+
+SELECT id, nazwa, potoczna FROM grzyby WHERE jadalny = 1;
+
+
+‒ Zapytanie 2: wybierające jedynie pole potoczna z tabeli grzyby oraz odpowiadające mu pole nazwa
+z tabeli rodzina jedynie dla grzybów, do których przypisana jest potrawa zupa
+
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+
+SELECT grzyby.potoczna, rodzina.nazwa FROM grzyby 
+JOIN rodzina ON grzyby.rodzina_id = rodzina.id
+JOIN potrawy ON grzyby.potrawy_id = potrawy.id WHERE potrawy.id = 4;
+
+
+‒ Zapytanie 3: wybierające jedynie pola nazwa_pliku oraz nazwa z tabeli grzyby
+
+SELECT nazwa_pliku, nazwa FROM grzyby;
+
+
+‒ Zapytanie 4: dodające do tabeli rodzina pole opis typu napisowego
+
+ALTER TABLE rodzina ADD COLUMN opis TEXT;
