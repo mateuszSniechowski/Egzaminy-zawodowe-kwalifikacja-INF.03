@@ -1,0 +1,76 @@
+/* *{
+    margin: 0;
+} */
+
+.panele{
+    display: flex;
+}
+
+.panel-lewy{
+    width: 20%;
+    height: 500px;
+}
+
+.panel-prawy{
+    height: 500px;
+    width: 80%;
+    position: relative;
+}
+
+.baner, .panel-lewy, footer{
+    background-color: #63b03c;
+    color: white;
+}
+
+.baner{
+    font-family: Arial;
+    font-size: 300%;
+}
+
+.baner a{
+    color: white;
+}
+
+.baner, footer{
+    text-align: center;
+}
+
+.panel-lewy a {
+    color: white;
+}
+
+.content{
+    display: flex;
+}
+
+.content p {
+    margin-right: 10px;
+}
+
+.baner *{
+    margin: 0;
+}
+
+#obowod, #pole{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.kwadrat, .kolo{
+    border: none;
+    background-color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer{
+    font-style: italic;
+}
+
+footer *{
+    margin: 0;
+}
+
+  

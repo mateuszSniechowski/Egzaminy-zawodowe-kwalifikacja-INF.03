@@ -1,0 +1,5 @@
+SELECT id, marka, model FROM samochody
+
+SELECT Samochody_id, Klient FROM `zamowienia`
+
+SELECT * FROM `samochody` WHERE marka = "FIAT"

@@ -1,0 +1,45 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header><a href="index.html"><img src="baner.png"></a></header>
+        <main>
+            <div class="panele">
+                <div class="panel-lewy">
+                    <nav>
+                        <p>Menu</p>
+                        <ul>
+                            <li type="none">- <a href="strona1.html">proste działania</a></li>
+                            <li type="none">- <a href="strona2.php">potęgowanie</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="panel-prawy">
+                    <form id="form">
+                        <div>
+                            <label for="pierwszaLiczba"><i>Podaj pierwszą liczbę:</i></label>
+                            <input type="number" name="pierwszaLiczba" id="pierwszaLiczba">
+                        </div>
+        
+                        <div>
+                            <label for="drugaLiczba"><i>Podaj drugą liczbę:</i></label>
+                            <input type="number" name="drugaLiczba" id="drugaLiczba">
+                        </div>
+        
+                        <input type="submit" id="dodawanie" value="DODAWANIE">
+                        <input type="submit" id="odejmowanie" value="ODEJMOWANIE">
+                        <input type="submit" id="mnozenie" value="MNOŻENIE">
+                        <input type="submit" id="dzielenie" value="DZIELENIE">
+        
+                        <div id="wynik"></div>
+                    </form>
+        
+                    <script src="strona1.js"></script>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

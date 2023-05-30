@@ -1,0 +1,57 @@
+*{
+    font-family: Verdana;
+}
+
+.blok-lewy, .blok-prawy{
+    background-color: seagreen;
+    color: white;
+    height: 260px;
+    font-size: 160%;
+    line-height: 150px;
+}
+
+header{
+    display: flex;
+}
+
+.blok-lewy{
+    width: 75%;
+}
+
+.blok-prawy{
+    width: 25%;
+    text-align: right;
+}
+
+.blok-glowny{
+    background-color: mintcream;
+    padding: 80px;
+}
+
+.footer{
+    display: flex;
+}
+
+footer{
+    background-color: seagreen;
+    color: white;
+    width: 50%;
+    height: 70px;
+    text-align: center;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+img{
+    box-shadow: 15px 15px 10px dimgray;
+}
+
+footer a{
+    text-decoration: none;
+    background-color: mintcream;
+    color: seagreen;
+    padding: 15px;
+    line-height: 70px;
+}

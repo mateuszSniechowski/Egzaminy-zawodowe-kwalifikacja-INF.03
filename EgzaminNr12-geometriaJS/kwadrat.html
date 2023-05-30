@@ -1,0 +1,59 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="baner">
+                <p><a href="index.html">FIGURY GEOMETRYCZNE I MATEMATYCY</a></p>
+            </div>
+
+        </header>
+
+        <main>
+          
+            <div class="panele">
+                <div class="panel-lewy">
+                    <h3>WYBIERZ FIGURĘ</h3>
+
+                    <ol>
+                        <li>
+                            <a href="kwadrat.html">KWADRAT</a> 
+                            <ol>
+                                <li type="square">obwódw</li>
+                                <li type="square">pole</li>
+                            </ol>
+                        </li>
+
+                        <li>
+                            <a href="kolo.html">KOŁO</a>
+                            <ol>
+                                <li type="square">obwód</li>
+                                <li type="square">pole</li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <h3><a href="matematycy.sql" download>BAZA DANYCH</a></h3>
+
+                </div>
+                <div class="panel-prawy">
+                    <h1>KWADRAT</h1>
+                    <form id="form">
+                        <label for="dane"><i>Podaj długość boku:</i></label>
+                        <input type="number" id="dane" name="dane">
+                        <div>
+                            <input type="submit" id="pole" name="pole" value="licz pole">
+                            <input type="submit" id="obwod" name="obwod" value="licz obwód">
+                        </div>
+                        <div id="wynik"></div>
+                    </form>
+                    <script src="kwadrat.js"></script>
+                </div>
+
+        </main>
+
+        <footer><p>Strona stworzona przez: 0000000000</p></footer>
+    </body>
+</html>

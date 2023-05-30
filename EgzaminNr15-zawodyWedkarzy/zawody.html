@@ -1,0 +1,66 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link href="styl3.css" rel="stylesheet">
+        <title>Zawody wędkarskie</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="blok-lewy">
+                <h1>Zawody polskich wędkarzy</h1>
+            </div>
+            <div class="blok-prawy">
+                <img src="zawody.jpg" alt="wędkowanie">
+            </div>
+        </header>
+        
+        <main>
+            <div class="blok-glowny">
+                <h3>Łowiska</h3>
+
+                <ul>
+                    <li>Zalew Węgrowski</li>
+                    <li>Zbiornik Bukówka</li>
+                    <li>Jezioro Bartbetowskie</li>
+                    <li>Warta-Obrzycko</li>
+                </ul>
+                <h3>Dodaj zawody wędkarskie</h3>
+                    <form method="POST" action="zgloszenie.php">
+                        <div>
+                            <label for="lowisko">Łowisko:</label>
+                            <input type="number" id="lowisko" name="lowisko">
+                        </div>
+
+                        <div>
+                            <label for="data">Data:</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+
+                        <div>
+                            <label for="sedzia">Sędzia:</label>
+                            <input type="text" id="sedzia" name="sedzia">
+                        </div>
+
+                        <input type="submit" id="clear" value="CZYŚĆ" onclick="Clear()">
+                        <input type="submit" id="DODAJ" value="DODAJ">
+                    </form>
+                    <script>
+                        const lowisko = document.querySelector("#lowisko");
+                        const data = document.querySelector("#data");
+                        const sedzia = document.querySelector("#sedzia");
+
+                        function Clear() {
+                            lowisko.value = "";
+                            data.value = "";
+                            sedzia.value = "";
+                        }
+                    </script>
+            </div>
+        </main>
+            <div class="footer">
+                <footer><a href="kwarendy.txt" download>Pobierz</a></footer>
+                <footer><p>Stornę przygotował: 0000000000</p></footer>
+            </div>
+    </body>
+</html>
