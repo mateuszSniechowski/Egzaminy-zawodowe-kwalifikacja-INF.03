@@ -101,12 +101,3 @@
 	</footer>
 </body>
 </html>
-
-
-// czy jak pisze ze serwer zamyka polaczenie z serwerem to tu jest dobrze zrobieone
-// ze tylko na konicu jest $connect -> close(); czy trzba w kadym skrypcie to 
-// pisac i potem w kolejnym sie laczyc 
-
-// czy jak widze na obrazku w pdf z egzaminem zawowodym ze jest margiens ale 
-// nie ma tego w poleceniu to dopisac zeby wygladalo jak najabardziej jak 
-// na obrazku czy to jest jako blad 
