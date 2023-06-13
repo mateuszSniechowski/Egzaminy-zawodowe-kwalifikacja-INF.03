@@ -1,0 +1,42 @@
+.content p{
+    font-style: italic;
+}
+
+.content{
+    width: 600px;
+    text-align: center;
+}
+
+.menu{
+    width: 200px;
+}
+
+.menu h5{
+    margin: 16px;
+    margin-left: 0;
+}
+
+.menu li{
+    list-style-type: "- ";
+    margin-left: 5px;
+} 
+
+.menu ul{
+    padding: 0;
+}
+
+main{
+    display: flex;
+}
+
+.content-kalk div{
+    margin-bottom: 15px;
+}
+
+input[type=submit]{
+    margin-right: 15px;
+}
+
+.content-kalk label{
+    font-style: italic;
+}

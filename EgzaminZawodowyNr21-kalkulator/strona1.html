@@ -1,0 +1,43 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="baner.png" alt="baner"></a>
+        </header>
+        <main>
+            <div class="menu">
+                <h5>Menu</h5>
+                <nav>
+                    <ul>
+                        <li><a href="strona1.html">Proste działania</a></li>
+                        <li><a href="strona2.php">Potęgowanie</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="content-kalk">
+                <h1>PROSTE DZIAŁANIA</h1>
+                <form id="form">
+                    <div>
+                        <label for="a">Podaj pierwszą liczbę:</label>
+                        <input type="number" id="a">
+                    </div>
+                    <div>
+                        <label for="b">Podaj drugą liczbę:</label>
+                        <input type="number" id="b">
+                    </div>
+
+                    <input type="submit" id="dodawanie" value="DODAWANIE" onclick="click()">
+                    <input type="submit" id="odejmowanie" value="ODEJMOWANIE">
+                    <input type="submit" id="mnozenie" value="MNOŻENIE">
+                    <input type="submit" id="dzielenie" value="DZIELENIE">
+
+                    <p id="comment"></p>
+                </form>
+                <script src="strona1.js"></script>
+            </div>
+        </main>
+    </body>
+</html>
