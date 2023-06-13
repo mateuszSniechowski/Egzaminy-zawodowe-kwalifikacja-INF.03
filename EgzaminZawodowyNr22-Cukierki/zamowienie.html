@@ -1,0 +1,65 @@
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <link href="styl10.css" rel="stylesheet">
+        <title>Fabryka cukierków</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-block1">
+                <a href="zamowienie.html">Zamów cukierki</a>
+            </div>
+            <div class="top-block2">
+                <a href="index.html"><img src="logotyp.png" alt="nasze logo"></a>
+            </div>
+        </header>
+            <div class="baner">
+                <h1>Strefa Zamówień</h1>
+            </div>
+        <main>
+            <div class="main-block--left">
+                <form id="form">
+                    <label for="number">Numer kształtu:</label><br>
+                    <input type="number" id="number">
+
+                    <p>Skomponuj swój kolor, podaj RGB:</p>
+                    <label for="r">R:</label>
+                    <input type="number" id="r">
+
+                    <label for="g">G:</label>
+                    <input type="number" id="g">
+
+                    <label for="b">B:</label>
+                    <input type="number" id="b">
+
+                    <input type="submit" id="order" value="Zamówienie">
+                    <p id="result">Twoje zamówienie</p>
+                </form>
+                    <input type="submit" id="color" value="Kolor" onclick="changeColor()">
+                <script src="script.js"></script>
+            </div>
+            <div class="main-block--right">
+                <h2>Nasza oferta</h2>
+                
+                <table>
+                    <tr>
+                        <td>Kształty</td>
+                        <td rowspan="2">Możesz zamówić <br> dowolny kolor cukierka</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ol>
+                                <li>cytryna</li>
+                                <li>liść</li>
+                                <li>banan</li>
+                            </ol>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <p>Autor strony: <b>0400000</b></p>
+        </footer>
+    </body>
+</html>
